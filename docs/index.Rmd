@@ -24,7 +24,7 @@ print(sum)
 In the United States, the jail population is incessantly increasing as time goes by. With the increased jail population, the overcriminalization and mass incarceration of people of color, immigrants, and people experiencing poverty has increased. To discover this inequality in incarceration rates, I mainly focused on gender inequality and how the different region of the United States impacts the rates. 
 
 ## Data Summary 
-```{r echo=FALSE, eval=TRUE, message=FALSE}
+```{r echo=FALSE, message=FALSE}
 source("../source/data_summary.R")
 ```
 The average jail population count of female was `r summary_info$female_jail_ct`%.
