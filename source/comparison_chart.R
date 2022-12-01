@@ -17,15 +17,13 @@ get_jail_pop <- get_jail_pop %>%
 
 plot_jail_pop_female <- ggplot(data = get_jail_pop, aes(x = year, y = female_jail_pop, color = state, group= state)) + 
   geom_line(aes(color=state)) +
-  xlab("Year") +
-  ylab("Female Jail Population") +
+  labs(x="Year",y="Jail Population",title="Female Prison Population by states") +
   geom_point(aes(color=state))
 plot_jail_pop_female
 
 plot_jail_pop_male <- ggplot(data = get_jail_pop, aes(x = year, y = male_jail_pop, color = state, group= state)) + 
   geom_line(aes(color=state)) +
-  xlab("Year") +
-  ylab("Male Jail Population") +
+  labs(x="Year",y="Jail Population",title="Male Prison Population by states") +
   geom_point(aes(color=state))
 plot_jail_pop_male
 
