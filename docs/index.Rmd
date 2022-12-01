@@ -3,6 +3,9 @@ title: "Inequality in Incarceration"
 author: "Judy Lee"
 date: '2022-11-21'
 output: html_document
+editor_options: 
+  markdown: 
+    wrap: sentence
 ---
 
 ```{r echo=FALSE, eval=TRUE, message=FALSE}
@@ -10,16 +13,23 @@ source("../source/a4-helpers.R")
 source("../source/analysis.R")
 ```
 
-## Abstract 
-In this assignment, I will use my data analysis and data visualization skills to discover the incarceration rates of the differences between two genders–male and female. Analyzing these two variables will allow me to understand gender discrimination differences and demonstrates the better view of gender inequality. 
+## Abstract
 
-## Introduction 
-In the United States, the jail population is incessantly increasing as time goes by. With the increased jail population, the overcriminalization and mass incarceration of people of color, immigrants, and people experiencing poverty has increased. To discover this inequality in incarceration rates, I mainly focused on gender inequality and how the different region of the United States impacts the rates. 
+In this assignment, I will use my data analysis and data visualization skills to discover the incarceration rates of the differences between two genders--male and female.
+Analyzing these two variables will allow me to understand gender discrimination differences and demonstrates the better view of gender inequality.
 
-## Data Summary 
+## Introduction
+
+In the United States, the jail population is incessantly increasing as time goes by.
+With the increased jail population, the overcriminalization and mass incarceration of people of color, immigrants, and people experiencing poverty has increased.
+To discover this inequality in incarceration rates, I mainly focused on gender inequality and how the different region of the United States impacts the rates.
+
+## Data Summary
+
 ```{r echo=FALSE, eval=TRUE, message=FALSE}
 source("../source/data_summary.R")
 ```
+
 The average jail population count of female was `r summary_info$female_jail_ct`.
 The average jail population count of male was `r summary_info$male_jail_ct`.
 The states with the highest number of jail population of female was `r summary_info$max_female_jail_st`.
@@ -32,30 +42,40 @@ The years with the lowest number of jail population of female was `r summary_inf
 The years with the lowest number of jail population of male was `r summary_info$min_male_jail_yr`.
 
 ## Growth of the U.S. Prison Population
+
 ```{r echo=FALSE, eval=TRUE, message=FALSE}
 source("../source/jail_pop_chart.R")
 ```
 
-Through this chart, I can determine the increase of jail population in the United States during 1970 to 2018. This bar chart shows how the incarceration rates changed over time, and I can notice that the jail population significantly increased in 1980 to 2008. 
+Through this chart, I can determine the increase of jail population in the United States during 1970 to 2018.
+This bar chart shows how the incarceration rates changed over time, and I can notice that the jail population significantly increased in 1980 to 2008.
 
 ## Growth of Prison Population by State
+
 ```{r echo=FALSE, eval=TRUE, message=FALSE}
 source("../source/state_chart.R")
 ```
 
-The line chart determines the growth of prison population by state, which I chose to analyze in California, New York, Oregon, and Washington. This chart shows the incarceration rates differences between the states, and I can determine that California has the highest rate while Oregon has the lowest rate. 
+The line chart determines the growth of prison population by state, which I chose to analyze in California, New York, Oregon, and Washington.
+This chart shows the incarceration rates differences between the states, and I can determine that California has the highest rate while Oregon has the lowest rate.
 
 ## The comparison of gender in growth of Prison Population by State
+
 ```{r echo=FALSE, eval=TRUE, message=FALSE}
 source("../source/comparison_chart.R")
 ```
 
-This chart compares two different and continuous variables that are related to one another. I have created line charts to illustrate the difference in male and female populations for imprisoned people over the years in 4 different states. From reflecting on this chart, the number of male prisoners is greater than female prisoners, as I expected.
+This chart compares two different and continuous variables that are related to one another.
+I have created line charts to illustrate the difference in male and female populations for imprisoned people over the years in 4 different states.
+From reflecting on this chart, the number of male prisoners is greater than female prisoners, as I expected.
 
 ## Map
+
 ```{r echo=FALSE, eval=TRUE, message=FALSE}
 source("../source/map_chart.R")
 ```
 
-By creating this geographical chart, I can determine which states had the highest and lowest number of males in jail in 2008. I chose these variables because I wanted to compare states in the year when they had the highest rates of the jail population in the US. For example, with this visualization, I can specify that California has the highest number of males in jail. From reflecting on this chart, I found it very interesting to compare and see the differences between the states and analyze the jail population using data visualization. 
-
+By creating this geographical chart, I can determine which states had the highest and lowest number of males in jail in 2008.
+I chose these variables because I wanted to compare states in the year when they had the highest rates of the jail population in the US.
+For example, with this visualization, I can specify that California has the highest number of males in jail.
+From reflecting on this chart, I found it very interesting to compare and see the differences between the states and analyze the jail population using data visualization.
